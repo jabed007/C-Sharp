@@ -1,0 +1,15 @@
+G:\Code\C-Sharp\devskill-b8\Examples\1_DataTypes\bin\Debug\net7.0\1_DataTypes.exe
+G:\Code\C-Sharp\devskill-b8\Examples\1_DataTypes\bin\Debug\net7.0\1_DataTypes.deps.json
+G:\Code\C-Sharp\devskill-b8\Examples\1_DataTypes\bin\Debug\net7.0\1_DataTypes.runtimeconfig.json
+G:\Code\C-Sharp\devskill-b8\Examples\1_DataTypes\bin\Debug\net7.0\1_DataTypes.dll
+G:\Code\C-Sharp\devskill-b8\Examples\1_DataTypes\bin\Debug\net7.0\1_DataTypes.pdb
+G:\Code\C-Sharp\devskill-b8\Examples\1_DataTypes\obj\Debug\net7.0\1_DataTypes.csproj.AssemblyReference.cache
+G:\Code\C-Sharp\devskill-b8\Examples\1_DataTypes\obj\Debug\net7.0\1_DataTypes.GeneratedMSBuildEditorConfig.editorconfig
+G:\Code\C-Sharp\devskill-b8\Examples\1_DataTypes\obj\Debug\net7.0\1_DataTypes.AssemblyInfoInputs.cache
+G:\Code\C-Sharp\devskill-b8\Examples\1_DataTypes\obj\Debug\net7.0\1_DataTypes.AssemblyInfo.cs
+G:\Code\C-Sharp\devskill-b8\Examples\1_DataTypes\obj\Debug\net7.0\1_DataTypes.csproj.CoreCompileInputs.cache
+G:\Code\C-Sharp\devskill-b8\Examples\1_DataTypes\obj\Debug\net7.0\1_DataTypes.dll
+G:\Code\C-Sharp\devskill-b8\Examples\1_DataTypes\obj\Debug\net7.0\refint\1_DataTypes.dll
+G:\Code\C-Sharp\devskill-b8\Examples\1_DataTypes\obj\Debug\net7.0\1_DataTypes.pdb
+G:\Code\C-Sharp\devskill-b8\Examples\1_DataTypes\obj\Debug\net7.0\1_DataTypes.genruntimeconfig.cache
+G:\Code\C-Sharp\devskill-b8\Examples\1_DataTypes\obj\Debug\net7.0\ref\1_DataTypes.dll
