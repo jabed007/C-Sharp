@@ -1,0 +1,15 @@
+G:\Code\C-Sharp\pluralsight\Examples\1_HelloFromCSharp\bin\Debug\net7.0\1_HelloFromCSharp.exe
+G:\Code\C-Sharp\pluralsight\Examples\1_HelloFromCSharp\bin\Debug\net7.0\1_HelloFromCSharp.deps.json
+G:\Code\C-Sharp\pluralsight\Examples\1_HelloFromCSharp\bin\Debug\net7.0\1_HelloFromCSharp.runtimeconfig.json
+G:\Code\C-Sharp\pluralsight\Examples\1_HelloFromCSharp\bin\Debug\net7.0\1_HelloFromCSharp.dll
+G:\Code\C-Sharp\pluralsight\Examples\1_HelloFromCSharp\bin\Debug\net7.0\1_HelloFromCSharp.pdb
+G:\Code\C-Sharp\pluralsight\Examples\1_HelloFromCSharp\obj\Debug\net7.0\1_HelloFromCSharp.csproj.AssemblyReference.cache
+G:\Code\C-Sharp\pluralsight\Examples\1_HelloFromCSharp\obj\Debug\net7.0\1_HelloFromCSharp.GeneratedMSBuildEditorConfig.editorconfig
+G:\Code\C-Sharp\pluralsight\Examples\1_HelloFromCSharp\obj\Debug\net7.0\1_HelloFromCSharp.AssemblyInfoInputs.cache
+G:\Code\C-Sharp\pluralsight\Examples\1_HelloFromCSharp\obj\Debug\net7.0\1_HelloFromCSharp.AssemblyInfo.cs
+G:\Code\C-Sharp\pluralsight\Examples\1_HelloFromCSharp\obj\Debug\net7.0\1_HelloFromCSharp.csproj.CoreCompileInputs.cache
+G:\Code\C-Sharp\pluralsight\Examples\1_HelloFromCSharp\obj\Debug\net7.0\1_HelloFromCSharp.dll
+G:\Code\C-Sharp\pluralsight\Examples\1_HelloFromCSharp\obj\Debug\net7.0\refint\1_HelloFromCSharp.dll
+G:\Code\C-Sharp\pluralsight\Examples\1_HelloFromCSharp\obj\Debug\net7.0\1_HelloFromCSharp.pdb
+G:\Code\C-Sharp\pluralsight\Examples\1_HelloFromCSharp\obj\Debug\net7.0\1_HelloFromCSharp.genruntimeconfig.cache
+G:\Code\C-Sharp\pluralsight\Examples\1_HelloFromCSharp\obj\Debug\net7.0\ref\1_HelloFromCSharp.dll
