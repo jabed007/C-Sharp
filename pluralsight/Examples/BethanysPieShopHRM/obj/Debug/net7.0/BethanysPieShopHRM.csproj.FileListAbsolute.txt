@@ -1,0 +1,5 @@
+G:\Code\C-Sharp\pluralsight\Examples\BethanysPieShopHRM\obj\Debug\net7.0\BethanysPieShopHRM.csproj.AssemblyReference.cache
+G:\Code\C-Sharp\pluralsight\Examples\BethanysPieShopHRM\obj\Debug\net7.0\BethanysPieShopHRM.GeneratedMSBuildEditorConfig.editorconfig
+G:\Code\C-Sharp\pluralsight\Examples\BethanysPieShopHRM\obj\Debug\net7.0\BethanysPieShopHRM.AssemblyInfoInputs.cache
+G:\Code\C-Sharp\pluralsight\Examples\BethanysPieShopHRM\obj\Debug\net7.0\BethanysPieShopHRM.AssemblyInfo.cs
+G:\Code\C-Sharp\pluralsight\Examples\BethanysPieShopHRM\obj\Debug\net7.0\BethanysPieShopHRM.csproj.CoreCompileInputs.cache

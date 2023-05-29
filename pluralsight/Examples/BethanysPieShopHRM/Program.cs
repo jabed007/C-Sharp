@@ -44,6 +44,27 @@
             Console.WriteLine("Please enter your name: ");
             string name = Console.ReadLine();
 
+            double ratePerHour = 12.34;
+            int numberOfHoursWorked = 165;
+
+            double currentMonthWage = ratePerHour * numberOfHoursWorked + bonus;
+            Console.WriteLine(currentMonthWage);
+
+            ratePerHour += 3;
+            Console.WriteLine(ratePerHour);
+
+            if (currentMonthWage > 2000)
+                Console.WriteLine("Top paid employee!");
+
+            int numberOfEmployees = 15;
+            numberOfEmployees--;
+            Console.WriteLine(numberOfEmployees);
+
+            bool a = true;
+            int b = 10;
+
+            Console.WriteLine(a);
+
         }
     }
 }
