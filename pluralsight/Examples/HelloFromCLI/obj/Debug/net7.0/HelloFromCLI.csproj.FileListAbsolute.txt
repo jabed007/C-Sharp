@@ -1,0 +1,15 @@
+G:\Code\C-Sharp\pluralsight\Examples\HelloFromCLI\bin\Debug\net7.0\HelloFromCLI.exe
+G:\Code\C-Sharp\pluralsight\Examples\HelloFromCLI\bin\Debug\net7.0\HelloFromCLI.deps.json
+G:\Code\C-Sharp\pluralsight\Examples\HelloFromCLI\bin\Debug\net7.0\HelloFromCLI.runtimeconfig.json
+G:\Code\C-Sharp\pluralsight\Examples\HelloFromCLI\bin\Debug\net7.0\HelloFromCLI.dll
+G:\Code\C-Sharp\pluralsight\Examples\HelloFromCLI\bin\Debug\net7.0\HelloFromCLI.pdb
+G:\Code\C-Sharp\pluralsight\Examples\HelloFromCLI\obj\Debug\net7.0\HelloFromCLI.csproj.AssemblyReference.cache
+G:\Code\C-Sharp\pluralsight\Examples\HelloFromCLI\obj\Debug\net7.0\HelloFromCLI.GeneratedMSBuildEditorConfig.editorconfig
+G:\Code\C-Sharp\pluralsight\Examples\HelloFromCLI\obj\Debug\net7.0\HelloFromCLI.AssemblyInfoInputs.cache
+G:\Code\C-Sharp\pluralsight\Examples\HelloFromCLI\obj\Debug\net7.0\HelloFromCLI.AssemblyInfo.cs
+G:\Code\C-Sharp\pluralsight\Examples\HelloFromCLI\obj\Debug\net7.0\HelloFromCLI.csproj.CoreCompileInputs.cache
+G:\Code\C-Sharp\pluralsight\Examples\HelloFromCLI\obj\Debug\net7.0\HelloFromCLI.dll
+G:\Code\C-Sharp\pluralsight\Examples\HelloFromCLI\obj\Debug\net7.0\refint\HelloFromCLI.dll
+G:\Code\C-Sharp\pluralsight\Examples\HelloFromCLI\obj\Debug\net7.0\HelloFromCLI.pdb
+G:\Code\C-Sharp\pluralsight\Examples\HelloFromCLI\obj\Debug\net7.0\HelloFromCLI.genruntimeconfig.cache
+G:\Code\C-Sharp\pluralsight\Examples\HelloFromCLI\obj\Debug\net7.0\ref\HelloFromCLI.dll
