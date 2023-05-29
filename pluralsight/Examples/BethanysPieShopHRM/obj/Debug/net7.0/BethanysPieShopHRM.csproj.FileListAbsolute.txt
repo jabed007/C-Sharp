@@ -3,3 +3,13 @@ G:\Code\C-Sharp\pluralsight\Examples\BethanysPieShopHRM\obj\Debug\net7.0\Bethany
 G:\Code\C-Sharp\pluralsight\Examples\BethanysPieShopHRM\obj\Debug\net7.0\BethanysPieShopHRM.AssemblyInfoInputs.cache
 G:\Code\C-Sharp\pluralsight\Examples\BethanysPieShopHRM\obj\Debug\net7.0\BethanysPieShopHRM.AssemblyInfo.cs
 G:\Code\C-Sharp\pluralsight\Examples\BethanysPieShopHRM\obj\Debug\net7.0\BethanysPieShopHRM.csproj.CoreCompileInputs.cache
+G:\Code\C-Sharp\pluralsight\Examples\BethanysPieShopHRM\bin\Debug\net7.0\BethanysPieShopHRM.exe
+G:\Code\C-Sharp\pluralsight\Examples\BethanysPieShopHRM\bin\Debug\net7.0\BethanysPieShopHRM.deps.json
+G:\Code\C-Sharp\pluralsight\Examples\BethanysPieShopHRM\bin\Debug\net7.0\BethanysPieShopHRM.runtimeconfig.json
+G:\Code\C-Sharp\pluralsight\Examples\BethanysPieShopHRM\bin\Debug\net7.0\BethanysPieShopHRM.dll
+G:\Code\C-Sharp\pluralsight\Examples\BethanysPieShopHRM\bin\Debug\net7.0\BethanysPieShopHRM.pdb
+G:\Code\C-Sharp\pluralsight\Examples\BethanysPieShopHRM\obj\Debug\net7.0\BethanysPieShopHRM.dll
+G:\Code\C-Sharp\pluralsight\Examples\BethanysPieShopHRM\obj\Debug\net7.0\refint\BethanysPieShopHRM.dll
+G:\Code\C-Sharp\pluralsight\Examples\BethanysPieShopHRM\obj\Debug\net7.0\BethanysPieShopHRM.pdb
+G:\Code\C-Sharp\pluralsight\Examples\BethanysPieShopHRM\obj\Debug\net7.0\BethanysPieShopHRM.genruntimeconfig.cache
+G:\Code\C-Sharp\pluralsight\Examples\BethanysPieShopHRM\obj\Debug\net7.0\ref\BethanysPieShopHRM.dll

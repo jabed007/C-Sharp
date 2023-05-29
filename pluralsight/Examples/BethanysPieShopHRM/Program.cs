@@ -65,6 +65,17 @@
 
             Console.WriteLine(a);
 
+            int intMaxValue = int.MaxValue;
+            int intMinValue = int.MinValue;
+
+            char userSelction = 'a';
+            char upperVersion = char.ToUpper(userSelction);
+
+            bool isDigit = char.IsDigit(userSelction);
+            bool isLetter = char.IsLetter(userSelction);
+
+            Console.ReadLine();
+
         }
     }
 }
