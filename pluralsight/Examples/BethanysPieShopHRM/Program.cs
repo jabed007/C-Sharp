@@ -94,24 +94,31 @@
             //bool areWeInDst = currentDate.IsDaylightSavingTime();
 
 
-            DateTime startHour = DateTime.Now;
-            TimeSpan workHour = new TimeSpan(8, 35, 00);
-            DateTime endHour = startHour.Add(workHour);
+            //DateTime startHour = DateTime.Now;
+            //TimeSpan workHour = new TimeSpan(8, 35, 00);
+            //DateTime endHour = startHour.Add(workHour);
 
-            Console.WriteLine(startHour);
-            Console.WriteLine(workHour);
-            Console.WriteLine(endHour);
+            //Console.WriteLine(startHour);
+            //Console.WriteLine(workHour);
+            //Console.WriteLine(endHour);
 
-            Console.WriteLine("---------------------------");
+            //Console.WriteLine("---------------------------");
 
-            Console.WriteLine(startHour.ToLongDateString());
-            Console.WriteLine(startHour.ToLongTimeString());
+            //Console.WriteLine(startHour.ToLongDateString());
+            //Console.WriteLine(startHour.ToLongTimeString());
 
-            Console.WriteLine("---------------------------");
+            //Console.WriteLine("---------------------------");
 
-            Console.WriteLine(endHour.ToShortDateString());
-            Console.WriteLine(endHour.ToShortTimeString());
+            //Console.WriteLine(endHour.ToShortDateString());
+            //Console.WriteLine(endHour.ToShortTimeString());
 
+            int numberOfHoursWorked = 165;
+            long veryLongMonth = numberOfHoursWorked; // works fine
+            double d = 12345678.0;
+
+            int x = (int)d;
+
+            int intVeryLongMonth = (int)veryLongMonth;
         }
     }
 }
