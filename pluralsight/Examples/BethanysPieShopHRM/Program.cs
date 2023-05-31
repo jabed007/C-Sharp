@@ -127,7 +127,7 @@
             {
                 Console.WriteLine("Please start end-of-month employee payments");
             }
-            else if(today.Date.Day >= 25 && !endOfMonthPaymentStarted)
+            else if (today.Date.Day >= 25 && !endOfMonthPaymentStarted)
             {
                 Console.WriteLine("Payment will be late");
             }
@@ -136,23 +136,35 @@
             Console.WriteLine("1. Add employee");
             Console.WriteLine("2. Update employee");
             Console.WriteLine("3. Delete employee");
+            Console.WriteLine("99. Exit application");
 
             string selectedAction = Console.ReadLine();
 
-            switch(selectedAction)
+            while (selectedAction != "99")
             {
-                case "1":
-                    Console.WriteLine("Adding new employee ...");
-                    break;
-                case "2":
-                    Console.WriteLine("Updating employee ...");
-                    break;
-                case "3":
-                    Console.WriteLine("Deleting employee ...");
-                    break;
-                default: 
-                    Console.WriteLine("Invalid Input");
-                    break;
+                switch (selectedAction)
+                {
+                    case "1":
+                        Console.WriteLine("Adding new employee ...");
+                        break;
+                    case "2":
+                        Console.WriteLine("Updating employee ...");
+                        break;
+                    case "3":
+                        Console.WriteLine("Deleting employee ...");
+                        break;
+                    default:
+                        Console.WriteLine("Invalid Input");
+                        break;
+                }
+
+                Console.WriteLine("Choose the action you want to do: ");
+                Console.WriteLine("1. Add employee");
+                Console.WriteLine("2. Update employee");
+                Console.WriteLine("3. Delete employee");
+                Console.WriteLine("99. Exit application");
+
+                selectedAction = Console.ReadLine();
             }
         }
     }
