@@ -120,28 +120,64 @@
 
             //int intVeryLongMonth = (int)veryLongMonth;
 
-            DateTime today = DateTime.Now;
-            bool endOfMonthPaymentStarted = false;
+            //DateTime today = DateTime.Now;
+            //bool endOfMonthPaymentStarted = false;
 
-            if (today.Date.Day == 20)
+            //if (today.Date.Day == 20)
+            //{
+            //    Console.WriteLine("Please start end-of-month employee payments");
+            //}
+            //else if (today.Date.Day >= 25 && !endOfMonthPaymentStarted)
+            //{
+            //    Console.WriteLine("Payment will be late");
+            //}
+
+            //Console.WriteLine("Choose the action you want to do: ");
+            //Console.WriteLine("1. Add employee");
+            //Console.WriteLine("2. Update employee");
+            //Console.WriteLine("3. Delete employee");
+            //Console.WriteLine("99. Exit application");
+
+            //string selectedAction = Console.ReadLine();
+
+            //while (selectedAction != "99")
+            //{
+            //    switch (selectedAction)
+            //    {
+            //        case "1":
+            //            Console.WriteLine("Adding new employee ...");
+            //            break;
+            //        case "2":
+            //            Console.WriteLine("Updating employee ...");
+            //            break;
+            //        case "3":
+            //            Console.WriteLine("Deleting employee ...");
+            //            break;
+            //        default:
+            //            Console.WriteLine("Invalid Input");
+            //            break;
+            //    }
+
+            //    Console.WriteLine("Choose the action you want to do: ");
+            //    Console.WriteLine("1. Add employee");
+            //    Console.WriteLine("2. Update employee");
+            //    Console.WriteLine("3. Delete employee");
+            //    Console.WriteLine("99. Exit application");
+
+            //    selectedAction = Console.ReadLine();
+            //}
+
+            string selectedAction;
+
+            do
             {
-                Console.WriteLine("Please start end-of-month employee payments");
-            }
-            else if (today.Date.Day >= 25 && !endOfMonthPaymentStarted)
-            {
-                Console.WriteLine("Payment will be late");
-            }
+                Console.WriteLine("Choose the action you want to do: ");
+                Console.WriteLine("1. Add employee");
+                Console.WriteLine("2. Update employee");
+                Console.WriteLine("3. Delete employee");
+                Console.WriteLine("99. Exit application");
+                selectedAction = Console.ReadLine();
 
-            Console.WriteLine("Choose the action you want to do: ");
-            Console.WriteLine("1. Add employee");
-            Console.WriteLine("2. Update employee");
-            Console.WriteLine("3. Delete employee");
-            Console.WriteLine("99. Exit application");
-
-            string selectedAction = Console.ReadLine();
-
-            while (selectedAction != "99")
-            {
                 switch (selectedAction)
                 {
                     case "1":
@@ -157,15 +193,8 @@
                         Console.WriteLine("Invalid Input");
                         break;
                 }
-
-                Console.WriteLine("Choose the action you want to do: ");
-                Console.WriteLine("1. Add employee");
-                Console.WriteLine("2. Update employee");
-                Console.WriteLine("3. Delete employee");
-                Console.WriteLine("99. Exit application");
-
-                selectedAction = Console.ReadLine();
             }
+            while (selectedAction != "99");
         }
     }
 }
