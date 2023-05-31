@@ -169,32 +169,52 @@
 
             string selectedAction;
 
-            do
-            {
-                Console.WriteLine("Choose the action you want to do: ");
-                Console.WriteLine("1. Add employee");
-                Console.WriteLine("2. Update employee");
-                Console.WriteLine("3. Delete employee");
-                Console.WriteLine("99. Exit application");
-                selectedAction = Console.ReadLine();
+            //do
+            //{
+            //    Console.WriteLine("Choose the action you want to do: ");
+            //    Console.WriteLine("1. Add employee");
+            //    Console.WriteLine("2. Update employee");
+            //    Console.WriteLine("3. Delete employee");
+            //    Console.WriteLine("99. Exit application");
+            //    selectedAction = Console.ReadLine();
 
-                switch (selectedAction)
+            //    switch (selectedAction)
+            //    {
+            //        case "1":
+            //            Console.WriteLine("Adding new employee ...");
+            //            break;
+            //        case "2":
+            //            Console.WriteLine("Updating employee ...");
+            //            break;
+            //        case "3":
+            //            Console.WriteLine("Deleting employee ...");
+            //            break;
+            //        default:
+            //            Console.WriteLine("Invalid Input");
+            //            break;
+            //    }
+            //}
+            //while (selectedAction != "99");
+
+            int amount = 1234;
+            int months = 12;
+
+            int yearlyWage = CalculateYearlyWage(amount, months);
+
+            Console.WriteLine($"Yearly wage: {yearlyWage}");
+
+            static int CalculateYearlyWage(int monthlyWage, int numberOfMonthsWorked)
+            {
+                Console.WriteLine($"Yearly wage: {monthlyWage * numberOfMonthsWorked}");
+
+                // lets add a bonus month
+                if (numberOfMonthsWorked == 12)
                 {
-                    case "1":
-                        Console.WriteLine("Adding new employee ...");
-                        break;
-                    case "2":
-                        Console.WriteLine("Updating employee ...");
-                        break;
-                    case "3":
-                        Console.WriteLine("Deleting employee ...");
-                        break;
-                    default:
-                        Console.WriteLine("Invalid Input");
-                        break;
+                    return monthlyWage * (numberOfMonthsWorked + 1);
                 }
+
+                return monthlyWage * numberOfMonthsWorked;
             }
-            while (selectedAction != "99");
         }
     }
 }
