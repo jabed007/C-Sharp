@@ -8,6 +8,20 @@ namespace BethanysPieShopHRM
 {
     internal class Utilities
     {
+        public static void UsingEscapeCharacter()
+        {
+            string firstName = "Bethany";
+            string lastName = "Smith";
+
+            string displayName = $"Welcome!\n{firstName}\t{lastName}";
+            Console.WriteLine(displayName);
+
+            string filePath = @"C:\data\employeelist.xlsx";
+            Console.WriteLine(filePath);
+
+            string marketingTagLine = "Baking the best \"pies\" ever";
+            Console.WriteLine(marketingTagLine);
+        }
         public static void ManifulatingString()
         {
             string firstName = "Bethany";
