@@ -218,7 +218,9 @@
 
             //Utilities.ManifulatingString();
 
-            Utilities.UsingEscapeCharacter();
+            //Utilities.UsingEscapeCharacter();
+
+            Utilities.UsingStringEuality();
         }
     }
 }
