@@ -220,7 +220,9 @@
 
             //Utilities.UsingEscapeCharacter();
 
-            Utilities.UsingStringEuality();
+            //Utilities.UsingStringEuality();
+
+            Utilities.ParsingString();
         }
     }
 }

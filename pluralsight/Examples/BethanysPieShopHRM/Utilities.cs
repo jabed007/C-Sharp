@@ -8,6 +8,29 @@ namespace BethanysPieShopHRM
 {
     internal class Utilities
     {
+        public static void ParsingString()
+        {
+            Console.Write("Enter the wage ");
+            string wage = Console.ReadLine();
+
+            //int wageValue = int.Parse(wage);
+            //Console.WriteLine(wageValue);
+
+            int wageValue;
+
+            if(int.TryParse(wage, out wageValue))
+            {
+                Console.WriteLine("Parsing succeed " + wageValue);
+            }
+            else
+            {
+                Console.WriteLine("Parsing failed");
+            }
+
+            string hireDateString = "12/12/2022";
+            DateTime hireDate = DateTime.Parse(hireDateString);
+            Console.WriteLine("Parsed date: " + hireDate);
+        }
         public static void UsingStringEuality()
         {
             string name1 = "Bethany";
