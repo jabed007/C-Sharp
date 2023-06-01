@@ -17,6 +17,24 @@ namespace BethanysPieShopHRM
 
             Console.WriteLine($"Yearly wage for employee 1 (Bethany): {yearlyWageForEmployee1}");
         }
+
+        public static void UsingNamedArgument()
+        {
+            int amount = 1234;
+            int month = 12;
+            int bonus = 1000;
+
+            int yearlyWageForEmployee = CalculateYearlyWageWithNamedArgument(bonus:bonus, monthlyWage:amount, numberOfMonthsWorked:month);
+
+            Console.WriteLine($"Yearly wage for employee: {yearlyWageForEmployee}");
+        }
+
+        public static int CalculateYearlyWageWithNamedArgument(int monthlyWage, int numberOfMonthsWorked, int bonus)
+        {
+            Console.WriteLine($"The Yearly wage: {monthlyWage + numberOfMonthsWorked + bonus}");
+
+            return monthlyWage + numberOfMonthsWorked + bonus;
+        }
         public static int CalculateYearlyWageWithOptionals(int monthlyWage, int numberOfMonthsWorked, int bonus = 5)
         {
             Console.WriteLine($"The Yearly wage: {monthlyWage + numberOfMonthsWorked + bonus}");

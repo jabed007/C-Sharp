@@ -213,6 +213,8 @@
             //double yearlyWageWithBonusDouble = Utilities.CalculateYearlyWage(amountDouble, monthsDouble, bonusDouble);
 
             Utilities.UsingOptionalParameter();
+
+            Utilities.UsingNamedArgument();
         }
     }
 }
