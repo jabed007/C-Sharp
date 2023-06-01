@@ -8,6 +8,17 @@ namespace BethanysPieShopHRM
 {
     internal class Utilities
     {
+        public static void UsingString()
+        {
+            string firstName = "Bethany";
+            string lastName = "Smith";
+            string s;
+            s = firstName;
+            var userName = "BethanyS";
+            userName = userName.ToLower();
+
+            userName = ""; // identical to string.Empty();
+        }
         // using optional parameter
         public static void UsingOptionalParameter()
         {
