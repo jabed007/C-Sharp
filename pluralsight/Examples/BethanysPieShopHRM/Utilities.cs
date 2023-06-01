@@ -8,6 +8,31 @@ namespace BethanysPieShopHRM
 {
     internal class Utilities
     {
+        public static void ManifulatingString()
+        {
+            string firstName = "Bethany";
+            string lastName = "Smith";
+
+            // string concatination
+            string fullName = firstName + " " + lastName;
+            string employeeIdentification = string.Concat(firstName, lastName);
+
+            // string method
+            string empId = firstName.ToLower() + "-" + lastName.Trim().ToLower();
+
+            int length = empId.Length;
+
+            if(fullName.Contains("beth") || fullName.Contains("Beth"))
+            {
+                Console.WriteLine("It is Bethany");
+            }
+
+            string subString = fullName.Substring(1, 3);
+
+            Console.WriteLine("Characters 2 to 4 of full name are " + subString);
+
+            string userNameWithInterpolation = $"{firstName}-{lastName}";
+        }
         public static void UsingString()
         {
             string firstName = "Bethany";
@@ -45,7 +70,7 @@ namespace BethanysPieShopHRM
 
         //Using Expression Bodied
 
-        public static void UsingExpressionBodied()
+        public static void UsingExpressionBodiedSyntax()
         {
             int amount = 1235;
             int month = 12;
