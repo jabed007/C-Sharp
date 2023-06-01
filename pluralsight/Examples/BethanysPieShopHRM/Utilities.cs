@@ -10,6 +10,8 @@ namespace BethanysPieShopHRM
     {
         public static int CalculateYearlyWage(int monthlyWage, int numberOfMonthsWorked)
         {
+            int local = 100;
+
             Console.WriteLine($"Yearly wage: {monthlyWage * numberOfMonthsWorked}");
 
             // lets add a bonus month
@@ -23,6 +25,8 @@ namespace BethanysPieShopHRM
 
         public static int CalculateYearlyWage(int monthlyWage, int numberOfMonthsWorked, int bonus)
         {
+            int local = 150;
+            
             Console.WriteLine($"The Yearly wage is: {monthlyWage * numberOfMonthsWorked + bonus}");
 
             //// lets add a bonus month
