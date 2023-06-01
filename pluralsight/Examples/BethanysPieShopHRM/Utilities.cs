@@ -8,6 +8,7 @@ namespace BethanysPieShopHRM
 {
     internal class Utilities
     {
+        // using optional parameter
         public static void UsingOptionalParameter()
         {
             int monthlyWage1 = 1234;
@@ -18,6 +19,8 @@ namespace BethanysPieShopHRM
             Console.WriteLine($"Yearly wage for employee 1 (Bethany): {yearlyWageForEmployee1}");
         }
 
+
+        // Using named argument
         public static void UsingNamedArgument()
         {
             int amount = 1234;
@@ -29,19 +32,36 @@ namespace BethanysPieShopHRM
             Console.WriteLine($"Yearly wage for employee: {yearlyWageForEmployee}");
         }
 
-        public static int CalculateYearlyWageWithNamedArgument(int monthlyWage, int numberOfMonthsWorked, int bonus)
-        {
-            Console.WriteLine($"The Yearly wage: {monthlyWage + numberOfMonthsWorked + bonus}");
+        //Using Expression Bodied
 
-            return monthlyWage + numberOfMonthsWorked + bonus;
+        public static void UsingExpressionBodied()
+        {
+            int amount = 1235;
+            int month = 12;
+            int bonus = 1000;
+
+            int yearlyWageOfEmployee = CalculateYearlyWageWithExpressionBodied(amount, month, bonus);
         }
+
+        // using optional parameter
         public static int CalculateYearlyWageWithOptionals(int monthlyWage, int numberOfMonthsWorked, int bonus = 5)
         {
             Console.WriteLine($"The Yearly wage: {monthlyWage + numberOfMonthsWorked + bonus}");
 
             return monthlyWage + numberOfMonthsWorked + bonus;
         }
-        
+
+        // Using named argument
+        public static int CalculateYearlyWageWithNamedArgument(int monthlyWage, int numberOfMonthsWorked, int bonus)
+        {
+            Console.WriteLine($"The Yearly wage: {monthlyWage + numberOfMonthsWorked + bonus}");
+
+            return monthlyWage + numberOfMonthsWorked + bonus;
+        }
+
+        //Using Expression Bodied
+        public static int CalculateYearlyWageWithExpressionBodied(int monthlyWage, int numberOfMonthsWorked, int bonus) => monthlyWage * numberOfMonthsWorked + bonus;
+
         public static int CalculateYearlyWage(int monthlyWage, int numberOfMonthsWorked)
         {
             int local = 100;
