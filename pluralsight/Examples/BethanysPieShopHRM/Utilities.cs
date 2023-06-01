@@ -8,6 +8,22 @@ namespace BethanysPieShopHRM
 {
     internal class Utilities
     {
+        public static void UsingOptionalParameter()
+        {
+            int monthlyWage1 = 1234;
+            int months1 = 12;
+
+            int yearlyWageForEmployee1 = CalculateYearlyWageWithOptionals(monthlyWage1, months1);
+
+            Console.WriteLine($"Yearly wage for employee 1 (Bethany): {yearlyWageForEmployee1}");
+        }
+        public static int CalculateYearlyWageWithOptionals(int monthlyWage, int numberOfMonthsWorked, int bonus = 5)
+        {
+            Console.WriteLine($"The Yearly wage: {monthlyWage + numberOfMonthsWorked + bonus}");
+
+            return monthlyWage + numberOfMonthsWorked + bonus;
+        }
+        
         public static int CalculateYearlyWage(int monthlyWage, int numberOfMonthsWorked)
         {
             int local = 100;

@@ -210,7 +210,9 @@
             double monthsDouble = 12;
             double bonusDouble = 1000;
 
-            double yearlyWageWithBonusDouble = Utilities.CalculateYearlyWage(amountDouble, monthsDouble, bonusDouble);
+            //double yearlyWageWithBonusDouble = Utilities.CalculateYearlyWage(amountDouble, monthsDouble, bonusDouble);
+
+            Utilities.UsingOptionalParameter();
         }
     }
 }
