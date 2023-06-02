@@ -12,13 +12,29 @@ namespace BethanysPieShopHRM
         public string lastName;
         public string email;
 
+        public DateTime birthDay;
+
         public int numberOfHoursWorked;
         public double wage;
         public double hourlyRate;
 
-        public DateTime birthDay;
+        
 
         const int minimulHoursWorkedUnit = 1;
+
+        public Employee(string first, string last, string em, DateTime bd):this(first, last, em, bd, 0)
+        {
+
+        }
+
+        public Employee(string first, string last, string em, DateTime bd, double rate)
+        {
+            firstName = first;
+            lastName = last;
+            email = em;
+            birthDay = bd;
+            hourlyRate = rate;
+        }
 
         public void PerformWork()
         {
@@ -28,7 +44,7 @@ namespace BethanysPieShopHRM
         public void PerformWork(int numberOfHours)
         {
             numberOfHoursWorked += numberOfHours;
-            Console.WriteLine($"The {firstName} {lastName} has worked for {numberOfHoursWorked} hour(s)!");
+            Console.WriteLine($"The {firstName} {lastName} has worked for {numberOfHours} hour(s)!");
         }
 
         public double ReceiveWage(bool resetHours = true)
@@ -37,7 +53,7 @@ namespace BethanysPieShopHRM
 
             Console.WriteLine($"{firstName} {lastName} has received a wage of {wage} for {numberOfHoursWorked} hour(s) of work");
 
-            if (resetHours )
+            if (resetHours)
             {
                 numberOfHoursWorked = 0;
             }

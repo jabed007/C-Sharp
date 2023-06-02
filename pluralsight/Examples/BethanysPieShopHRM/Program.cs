@@ -196,9 +196,9 @@
             //}
             //while (selectedAction != "99");
 
-            int amount = 1234;
-            int months = 12;
-            int bonus = 1000;
+            //int amount = 1234;
+            //int months = 12;
+            //int bonus = 1000;
 
             //Utilities.CalculateYearlyWage(amount, months, bonus);
 
@@ -206,9 +206,9 @@
 
             //Console.WriteLine($"Yearly wage: {yearlyWage}");
 
-            double amountDouble = 1500.0;
-            double monthsDouble = 12;
-            double bonusDouble = 1000;
+            //double amountDouble = 1500.0;
+            //double monthsDouble = 12;
+            //double bonusDouble = 1000;
 
             //double yearlyWageWithBonusDouble = Utilities.CalculateYearlyWage(amountDouble, monthsDouble, bonusDouble);
 
@@ -222,7 +222,21 @@
 
             //Utilities.UsingStringEuality();
 
-            Utilities.ParsingString();
+            //Utilities.ParsingString();
+
+            Console.WriteLine("Creating an employee");
+            Console.WriteLine("--------------------\n");
+
+            Employee bethany = new Employee("Bethany", "Smith", "bethany@snowball.be", new DateTime(1995, 10, 31), 25);
+
+            bethany.EmployeeDetails();
+            bethany.PerformWork();
+            bethany.PerformWork(5);
+            bethany.PerformWork();
+            bethany.PerformWork();
+
+            double receivedWageBethany = bethany.ReceiveWage(true);
+            Console.WriteLine($"Wage paid (message from program): {receivedWageBethany}");
         }
     }
 }
