@@ -237,6 +237,40 @@
 
             double receivedWageBethany = bethany.ReceiveWage(true);
             Console.WriteLine($"Wage paid (message from program): {receivedWageBethany}");
+
+            Console.WriteLine("\n\n");
+
+            Console.WriteLine("Creating an employee");
+            Console.WriteLine("--------------------\n");
+
+            Employee george = new("George", "Jones", "george@snowball.be", new DateTime(1984, 3, 28), 30);
+
+            george.EmployeeDetails();
+            george.PerformWork();
+            george.PerformWork();
+            george.PerformWork(3);
+            george.PerformWork();
+            george.PerformWork(8);
+
+            var receivedWageGeorge = george.ReceiveWage(true);
+            Console.WriteLine($"Wage paid (message from program): {receivedWageGeorge}");
+
+            Console.WriteLine("\n\n");
+
+            Console.WriteLine("Creating an employee");
+            Console.WriteLine("--------------------\n");
+
+            bethany.firstName = "John";
+            bethany.hourlyRate = 10;
+
+            bethany.EmployeeDetails();
+            bethany.PerformWork();
+            bethany.PerformWork(12);
+            bethany.PerformWork();
+            bethany.PerformWork();
+
+            double receivedWageJohn = bethany.ReceiveWage(true);
+            Console.WriteLine($"Wage paid (message from program): {receivedWageJohn}");
         }
     }
 }
