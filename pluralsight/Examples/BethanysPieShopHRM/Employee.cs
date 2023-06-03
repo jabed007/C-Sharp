@@ -47,6 +47,29 @@ namespace BethanysPieShopHRM
             Console.WriteLine($"The {firstName} {lastName} has worked for {numberOfHours} hour(s)!");
         }
 
+        public int CalculateBonus(int bonus)
+        {
+            if (numberOfHoursWorked > 10)
+            {
+                bonus *= 2;
+            }
+            Console.WriteLine($"The Employee got a bonus {bonus}");
+            return bonus;
+        }
+
+        public int CalculateBonusAndBonusTax(int bonus, ref int bonusTax)
+        {
+            if (numberOfHoursWorked > 10)
+            {
+                bonus *= 2;
+                bonusTax = bonus / 10;
+                bonus -= bonusTax;
+            }
+            Console.WriteLine($"The Employee got a bonus {bonus}");
+
+            return bonus;
+        }
+
         public double ReceiveWage(bool resetHours = true)
         {
             wage = numberOfHoursWorked * hourlyRate;

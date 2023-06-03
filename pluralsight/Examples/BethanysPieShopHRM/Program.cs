@@ -284,6 +284,7 @@
             ///////////////////////////////////////////////////////////
 
             // Value type
+            /*
             int a = 42;
             int aCopy = a;
 
@@ -301,6 +302,25 @@
 
             bethany.EmployeeDetails();
             testEmployee.EmployeeDetails();
+            */
+
+            Employee bethany = new Employee("Bethany", "Smith", "bethany@snowball.be", new DateTime(1995, 10, 31), 25);
+
+            bethany.PerformWork(25);
+
+            // Passing parameters by value
+            //int minimumBonus = 100;
+            //int receivedBonus = bethany.CalculateBonus(minimumBonus);
+            //Console.WriteLine($"The minimum bonus is {minimumBonus} and {bethany.firstName} has received a bonus {receivedBonus}");
+
+            // Passing parameters by reference
+            int minimumBonus = 100;
+            int bonusTax = 0;
+
+            int receivedBonus = bethany.CalculateBonusAndBonusTax(minimumBonus, ref bonusTax);
+
+            Console.WriteLine($"The minimum bonus is {minimumBonus} and The bonus tax {bonusTax} and {bethany.firstName} has received a bonus {receivedBonus}");
+
         }
     }
 }
