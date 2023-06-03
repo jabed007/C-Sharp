@@ -314,10 +314,19 @@
             //Console.WriteLine($"The minimum bonus is {minimumBonus} and {bethany.firstName} has received a bonus {receivedBonus}");
 
             // Passing parameters by reference
-            int minimumBonus = 100;
-            int bonusTax = 0;
+            //int minimumBonus = 100;
+            //int bonusTax = 0; // need initialization in the context of ref keyword
 
-            int receivedBonus = bethany.CalculateBonusAndBonusTax(minimumBonus, ref bonusTax);
+            // use of ref keyword
+            //int receivedBonus = bethany.CalculateBonusAndBonusTax(minimumBonus, ref bonusTax);
+
+            //Console.WriteLine($"The minimum bonus is {minimumBonus} and The bonus tax {bonusTax} and {bethany.firstName} has received a bonus {receivedBonus}");
+
+            int minimumBonus = 100;
+            int bonusTax; // do not need initialization in the context of out keyword
+
+            //use of out keyword
+            int receivedBonus = bethany.CalculateBonusAndBonusTax(minimumBonus, out bonusTax);
 
             Console.WriteLine($"The minimum bonus is {minimumBonus} and The bonus tax {bonusTax} and {bethany.firstName} has received a bonus {receivedBonus}");
 

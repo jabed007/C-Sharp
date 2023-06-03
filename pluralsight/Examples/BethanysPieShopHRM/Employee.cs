@@ -57,11 +57,31 @@ namespace BethanysPieShopHRM
             return bonus;
         }
 
-        public int CalculateBonusAndBonusTax(int bonus, ref int bonusTax)
+        // use of ref keyword
+        //public int CalculateBonusAndBonusTax(int bonus, ref int bonusTax)
+        //{
+        //    if (numberOfHoursWorked > 10)
+        //    {
+        //        bonus *= 2;
+        //        bonusTax = bonus / 10;
+        //        bonus -= bonusTax;
+        //    }
+        //    Console.WriteLine($"The Employee got a bonus {bonus}");
+
+        //    return bonus;
+        //}
+
+        // use of out keyword
+        public int CalculateBonusAndBonusTax(int bonus, out int bonusTax)
         {
+            bonusTax = 0;
             if (numberOfHoursWorked > 10)
             {
                 bonus *= 2;
+            }
+
+            if (bonus >= 200)
+            {
                 bonusTax = bonus / 10;
                 bonus -= bonusTax;
             }
