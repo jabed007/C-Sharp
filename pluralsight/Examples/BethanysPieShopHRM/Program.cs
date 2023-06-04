@@ -1,4 +1,6 @@
-﻿namespace BethanysPieShopHRM
+﻿using System.Text;
+
+namespace BethanysPieShopHRM
 {
     internal class Program
     {
@@ -304,9 +306,9 @@
             testEmployee.EmployeeDetails();
             */
 
-            Employee bethany = new Employee("Bethany", "Smith", "bethany@snowball.be", new DateTime(1995, 10, 31), 25);
+            //Employee bethany = new Employee("Bethany", "Smith", "bethany@snowball.be", new DateTime(1995, 10, 31), 25);
 
-            bethany.PerformWork(25);
+            //bethany.PerformWork(25);
 
             // Passing parameters by value
             //int minimumBonus = 100;
@@ -322,13 +324,55 @@
 
             //Console.WriteLine($"The minimum bonus is {minimumBonus} and The bonus tax {bonusTax} and {bethany.firstName} has received a bonus {receivedBonus}");
 
-            int minimumBonus = 100;
-            int bonusTax; // do not need initialization in the context of out keyword
+            //int minimumBonus = 100;
+            //int bonusTax; // do not need initialization in the context of out keyword
 
-            //use of out keyword
-            int receivedBonus = bethany.CalculateBonusAndBonusTax(minimumBonus, out bonusTax);
+            ////use of out keyword
+            //int receivedBonus = bethany.CalculateBonusAndBonusTax(minimumBonus, out bonusTax);
 
-            Console.WriteLine($"The minimum bonus is {minimumBonus} and The bonus tax {bonusTax} and {bethany.firstName} has received a bonus {receivedBonus}");
+            //Console.WriteLine($"The minimum bonus is {minimumBonus} and The bonus tax {bonusTax} and {bethany.firstName} has received a bonus {receivedBonus}");
+
+            // string are reference types
+            //string name = "Bethany";
+            //string anotherName = name;
+            //name += " Smith";
+
+            //Console.WriteLine($"Name: {name}");
+            //Console.WriteLine($"Another Name: {anotherName}");
+
+            //string upperCaseName = name.ToUpper();
+
+            //Console.WriteLine($"Name: {name}");
+            //Console.WriteLine($"Uppercase Name: {upperCaseName}");
+
+            //string indexes = string.Empty;
+
+            //for (int i = 0; i < 25000; i++)
+            //{
+            //    indexes = i.ToString();
+            //}
+
+            // uses of string builder
+            string firstName = "Bethany";
+            string lastName = "Smith";
+
+            StringBuilder builder = new StringBuilder();
+            builder.Append("Last Name: ");
+            builder.AppendLine(lastName);
+            builder.Append("First Name: ");
+            builder.AppendLine(firstName);
+            string result = builder.ToString();
+            Console.WriteLine(result);
+            Console.WriteLine(result.Length);
+
+            StringBuilder bulder2 = new StringBuilder();
+            for (int i = 0; i < 2500; i++)
+            {
+                bulder2.Append(i);
+                bulder2.Append(' ');
+            }
+            string list = bulder2.ToString();
+            Console.WriteLine(list);
 
         }
     }
