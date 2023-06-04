@@ -353,26 +353,31 @@ namespace BethanysPieShopHRM
             //}
 
             // uses of string builder
-            string firstName = "Bethany";
-            string lastName = "Smith";
+            //string firstName = "Bethany";
+            //string lastName = "Smith";
 
-            StringBuilder builder = new StringBuilder();
-            builder.Append("Last Name: ");
-            builder.AppendLine(lastName);
-            builder.Append("First Name: ");
-            builder.AppendLine(firstName);
-            string result = builder.ToString();
-            Console.WriteLine(result);
-            Console.WriteLine(result.Length);
+            //StringBuilder builder = new StringBuilder();
+            //builder.Append("Last Name: ");
+            //builder.AppendLine(lastName);
+            //builder.Append("First Name: ");
+            //builder.AppendLine(firstName);
+            //string result = builder.ToString();
+            //Console.WriteLine(result);
+            //Console.WriteLine(result.Length);
 
-            StringBuilder bulder2 = new StringBuilder();
-            for (int i = 0; i < 2500; i++)
-            {
-                bulder2.Append(i);
-                bulder2.Append(' ');
-            }
-            string list = bulder2.ToString();
-            Console.WriteLine(list);
+            //StringBuilder bulder2 = new StringBuilder();
+            //for (int i = 0; i < 2500; i++)
+            //{
+            //    bulder2.Append(i);
+            //    bulder2.Append(' ');
+            //}
+            //string list = bulder2.ToString();
+            //Console.WriteLine(list);
+
+            Employee bethany = new Employee("Bethany", "Smith", "bethany@snowball.be", new DateTime(1995, 10, 31), 25);
+
+            string bethanyAsJson = bethany.ConvertToJson();
+            Console.WriteLine(bethanyAsJson);
 
         }
     }

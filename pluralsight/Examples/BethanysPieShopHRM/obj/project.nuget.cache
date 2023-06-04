@@ -1,8 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "heIqxuTKi+2xuAibaA4DLI8lzCAtGhViGEGdkRCLmqOrXSMzVT6KUGbboHyAFvqFZgRfw6ijZs/ChM19AONy1w==",
+  "dgSpecHash": "wmdStETu2Vg45i3VJGrXqueYVdD2r2YhWyzclGtSC/rDZYgMvasqjD9nHl8M1pmY/TB587hUGtWWbz6aiXMdnA==",
   "success": true,
   "projectFilePath": "G:\\Code\\C-Sharp\\pluralsight\\Examples\\BethanysPieShopHRM\\BethanysPieShopHRM.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\jabed\\.nuget\\packages\\newtonsoft.json\\13.0.3\\newtonsoft.json.13.0.3.nupkg.sha512"
+  ],
   "logs": []
 }
