@@ -15,22 +15,25 @@ namespace BethanysPieShopHRM
         public double wage;
         public double hourlyRate;
 
+        public EmployeeType employeeType;
+
         
 
         const int minimulHoursWorkedUnit = 1;
 
-        public Employee(string first, string last, string em, DateTime bd):this(first, last, em, bd, 0)
+        public Employee(string first, string last, string em, DateTime bd):this(first, last, em, bd, 0, EmployeeType.StoreManager)
         {
 
         }
 
-        public Employee(string first, string last, string em, DateTime bd, double rate)
+        public Employee(string first, string last, string em, DateTime bd, double rate, EmployeeType empType)
         {
             firstName = first;
             lastName = last;
             email = em;
             birthDay = bd;
             hourlyRate = rate;
+            employeeType = empType;
         }
 
         public void PerformWork()
@@ -102,14 +105,26 @@ namespace BethanysPieShopHRM
 
         public double ReceiveWage(bool resetHours = true)
         {
-            wage = numberOfHoursWorked * hourlyRate;
+            //wage = numberOfHoursWorked * hourlyRate;
 
-            Console.WriteLine($"{firstName} {lastName} has received a wage of {wage} for {numberOfHoursWorked} hour(s) of work");
+            //Console.WriteLine($"{firstName} {lastName} has received a wage of {wage} for {numberOfHoursWorked} hour(s) of work");
+
+            if (employeeType == EmployeeType.Manager)
+            {
+                Console.WriteLine($"An extra was added to the wage since {firstName} is a manager");
+                wage = numberOfHoursWorked * hourlyRate * 1.25; 
+            }
+            else
+            {
+                wage = numberOfHoursWorked * hourlyRate;
+            }
 
             if (resetHours)
             {
                 numberOfHoursWorked = 0;
             }
+
+            Console.WriteLine($"{firstName} {lastName} has received a wage of {wage} for {numberOfHoursWorked} hour(s) of work");
 
             return wage;
         }

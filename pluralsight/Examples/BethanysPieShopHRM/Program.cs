@@ -374,7 +374,9 @@ namespace BethanysPieShopHRM
             //string list = bulder2.ToString();
             //Console.WriteLine(list);
 
-            Employee bethany = new Employee("Bethany", "Smith", "bethany@snowball.be", new DateTime(1995, 10, 31), 25);
+            Employee bethany = new Employee("Bethany", "Smith", "bethany@snowball.be", new DateTime(1995, 10, 31), 25, EmployeeType.Manager);
+
+            bethany.ReceiveWage();
 
             string bethanyAsJson = bethany.ConvertToJson();
             Console.WriteLine(bethanyAsJson);
