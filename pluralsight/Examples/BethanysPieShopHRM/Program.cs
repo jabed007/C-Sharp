@@ -374,12 +374,18 @@ namespace BethanysPieShopHRM
             //string list = bulder2.ToString();
             //Console.WriteLine(list);
 
-            Employee bethany = new Employee("Bethany", "Smith", "bethany@snowball.be", new DateTime(1995, 10, 31), 25, EmployeeType.Manager);
+            //Employee bethany = new Employee("Bethany", "Smith", "bethany@snowball.be", new DateTime(1995, 10, 31), 25, EmployeeType.Manager);
 
-            bethany.ReceiveWage();
+            //bethany.ReceiveWage
 
-            string bethanyAsJson = bethany.ConvertToJson();
-            Console.WriteLine(bethanyAsJson);
+            //string bethanyAsJson = bethany.ConvertToJson();
+            //Console.WriteLine(bethanyAsJson);
+
+            WorkTask task;
+
+            task.description = "Bake delicious pie";
+            task.hours = 3;
+            task.PerformWorkTask();
 
         }
     }
