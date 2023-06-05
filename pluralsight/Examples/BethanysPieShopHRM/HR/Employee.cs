@@ -1,7 +1,7 @@
 ﻿using Newtonsoft.Json;
 using System.Text;
 
-namespace BethanysPieShopHRM
+namespace BethanysPieShopHRM.HR
 {
     internal class Employee
     {
@@ -17,11 +17,11 @@ namespace BethanysPieShopHRM
 
         public EmployeeType employeeType;
 
-        
+
 
         const int minimulHoursWorkedUnit = 1;
 
-        public Employee(string first, string last, string em, DateTime bd):this(first, last, em, bd, 0, EmployeeType.StoreManager)
+        public Employee(string first, string last, string em, DateTime bd) : this(first, last, em, bd, 0, EmployeeType.StoreManager)
         {
 
         }
@@ -112,7 +112,7 @@ namespace BethanysPieShopHRM
             if (employeeType == EmployeeType.Manager)
             {
                 Console.WriteLine($"An extra was added to the wage since {firstName} is a manager");
-                wage = numberOfHoursWorked * hourlyRate * 1.25; 
+                wage = numberOfHoursWorked * hourlyRate * 1.25;
             }
             else
             {

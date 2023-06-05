@@ -1,4 +1,5 @@
 ﻿using System.Text;
+using BethanysPieShopHRM.HR;
 
 namespace BethanysPieShopHRM
 {
@@ -381,11 +382,14 @@ namespace BethanysPieShopHRM
             //string bethanyAsJson = bethany.ConvertToJson();
             //Console.WriteLine(bethanyAsJson);
 
-            WorkTask task;
+            //WorkTask task;
 
-            task.description = "Bake delicious pie";
-            task.hours = 3;
-            task.PerformWorkTask();
+            //task.description = "Bake delicious pie";
+            //task.hours = 3;
+            //task.PerformWorkTask();
+
+            // Use of namespace
+            BethanysPieShopHRM.Accounting.Customer customer = new BethanysPieShopHRM.Accounting.Customer();
 
         }
     }
