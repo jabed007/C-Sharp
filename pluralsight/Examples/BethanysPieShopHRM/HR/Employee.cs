@@ -13,7 +13,7 @@ namespace BethanysPieShopHRM.HR
 
         public int numberOfHoursWorked;
         public double wage;
-        public double hourlyRate;
+        public double? hourlyRate;
 
         public EmployeeType employeeType;
 
@@ -28,13 +28,13 @@ namespace BethanysPieShopHRM.HR
 
         }
 
-        public Employee(string first, string last, string em, DateTime bd, double rate, EmployeeType empType)
+        public Employee(string first, string last, string em, DateTime bd, double? rate, EmployeeType empType)
         {
             firstName = first;
             lastName = last;
             email = em;
             birthDay = bd;
-            hourlyRate = rate;
+            hourlyRate = rate ?? 10;
             employeeType = empType;
         }
 
@@ -116,11 +116,11 @@ namespace BethanysPieShopHRM.HR
             if (employeeType == EmployeeType.Manager)
             {
                 Console.WriteLine($"An extra was added to the wage since {firstName} is a manager");
-                wageBeforeTax = numberOfHoursWorked * hourlyRate * 1.25;
+                wageBeforeTax = numberOfHoursWorked * hourlyRate.Value * 1.25;
             }
             else
             {
-                wageBeforeTax = numberOfHoursWorked * hourlyRate;
+                wageBeforeTax = numberOfHoursWorked * hourlyRate.Value;
             }
             double taxAmpount = wageBeforeTax * taxRate;
 
