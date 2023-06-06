@@ -21,6 +21,8 @@ namespace BethanysPieShopHRM.HR
 
         const int minimulHoursWorkedUnit = 1;
 
+        public static double taxRate = 0.15;
+
         public Employee(string first, string last, string em, DateTime bd) : this(first, last, em, bd, 0, EmployeeType.StoreManager)
         {
 
@@ -109,29 +111,38 @@ namespace BethanysPieShopHRM.HR
 
             //Console.WriteLine($"{firstName} {lastName} has received a wage of {wage} for {numberOfHoursWorked} hour(s) of work");
 
+            double wageBeforeTax = 0.0;
+
             if (employeeType == EmployeeType.Manager)
             {
                 Console.WriteLine($"An extra was added to the wage since {firstName} is a manager");
-                wage = numberOfHoursWorked * hourlyRate * 1.25;
+                wageBeforeTax = numberOfHoursWorked * hourlyRate * 1.25;
             }
             else
             {
-                wage = numberOfHoursWorked * hourlyRate;
+                wageBeforeTax = numberOfHoursWorked * hourlyRate;
             }
+            double taxAmpount = wageBeforeTax * taxRate;
+
+            Console.WriteLine("Tax amount: " + taxAmpount);
+
+            wage = wageBeforeTax - taxAmpount;
+
+            Console.WriteLine($"{firstName} {lastName} has received a wage of {wage} for {numberOfHoursWorked} hour(s) of work");
 
             if (resetHours)
             {
                 numberOfHoursWorked = 0;
             }
 
-            Console.WriteLine($"{firstName} {lastName} has received a wage of {wage} for {numberOfHoursWorked} hour(s) of work");
-
             return wage;
         }
 
+
+
         public void EmployeeDetails()
         {
-            Console.WriteLine($"\nFirst name: \t{firstName}\nLast name: \t{lastName}\nEmail: \t\t{email}\nBirth date: \t{birthDay.ToShortDateString()}");
+            Console.WriteLine($"\nFirst name: \t{firstName}\nLast name: \t{lastName}\nEmail: \t\t{email}\nBirth date: \t{birthDay.ToShortDateString()}\nTax rate: \t\t{taxRate}");
         }
     }
 }

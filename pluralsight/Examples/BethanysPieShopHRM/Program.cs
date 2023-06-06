@@ -389,7 +389,69 @@ namespace BethanysPieShopHRM
             //task.PerformWorkTask();
 
             // Use of namespace
-            BethanysPieShopHRM.Accounting.Customer customer = new BethanysPieShopHRM.Accounting.Customer();
+            //BethanysPieShopHRM.Accounting.Customer customer = new BethanysPieShopHRM.Accounting.Customer();
+
+            Employee bethany = new Employee("Bethany", "Smith", "bethany@snowball.be", new DateTime(1995, 12, 23), 25, EmployeeType.Manager);
+
+            Employee john = new Employee("John", "Doe", "john@snowball.be", new DateTime(1990, 10, 10), 15, EmployeeType.Research);
+
+            #region Bethany First call
+            bethany.PerformWork();
+            bethany.PerformWork();
+
+            bethany.PerformWork(5);
+
+            bethany.PerformWork();
+
+            bethany.PerformWork();
+
+            bethany.ReceiveWage();
+
+            #endregion
+
+            #region John First call
+            john.PerformWork();
+            john.PerformWork();
+
+            john.PerformWork(5);
+
+            john.PerformWork();
+
+            john.PerformWork();
+
+            john.ReceiveWage();
+
+            #endregion
+
+            Employee.taxRate = 0.02;
+
+            #region Bethany Second call
+            bethany.PerformWork();
+            bethany.PerformWork();
+
+            bethany.PerformWork(5);
+
+            bethany.PerformWork();
+
+            bethany.PerformWork();
+
+            bethany.ReceiveWage();
+
+            #endregion
+
+            #region John Second call
+            john.PerformWork();
+            john.PerformWork();
+
+            john.PerformWork(5);
+
+            john.PerformWork();
+
+            john.PerformWork();
+
+            john.ReceiveWage();
+
+            #endregion
 
         }
     }
