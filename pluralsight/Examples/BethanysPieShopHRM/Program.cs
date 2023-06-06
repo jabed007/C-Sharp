@@ -391,9 +391,9 @@ namespace BethanysPieShopHRM
             // Use of namespace
             //BethanysPieShopHRM.Accounting.Customer customer = new BethanysPieShopHRM.Accounting.Customer();
 
-            Employee bethany = new Employee("Bethany", "Smith", "bethany@snowball.be", new DateTime(1995, 12, 23), 25, EmployeeType.Manager);
+            //Employee bethany = new Employee("Bethany", "Smith", "bethany@snowball.be", new DateTime(1995, 12, 23), 25, EmployeeType.Manager);
 
-            Employee john = new Employee("John", "Doe", "john@snowball.be", new DateTime(1990, 10, 10), null, EmployeeType.Research);
+            //Employee john = new Employee("John", "Doe", "john@snowball.be", new DateTime(1990, 10, 10), null, EmployeeType.Research);
 
             //#region Bethany First call
             //bethany.PerformWork();
@@ -454,8 +454,23 @@ namespace BethanysPieShopHRM
             //#endregion
 
             // Using null
-            Employee mysteryEmployee = null;
-            mysteryEmployee.EmployeeDetails();
+            //Employee mysteryEmployee = null;
+            //mysteryEmployee.EmployeeDetails();
+
+            List<Employee> employees = new List<Employee>();
+
+            for (int i = 0; i < 10000000; i++)
+            {
+                Employee randomEmployee = new Employee(Guid.NewGuid().ToString(), Guid.NewGuid().ToString(), Guid.NewGuid().ToString(), new DateTime(1991, 3, 16), null, EmployeeType.Sales);
+                employees.Add(randomEmployee);
+            }
+
+            employees.Clear();
+            employees = null;
+
+            GC.Collect();
+
+            Console.ReadLine();
         }
     }
 }
