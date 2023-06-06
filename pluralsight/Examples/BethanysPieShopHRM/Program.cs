@@ -457,20 +457,23 @@ namespace BethanysPieShopHRM
             //Employee mysteryEmployee = null;
             //mysteryEmployee.EmployeeDetails();
 
-            List<Employee> employees = new List<Employee>();
+            //List<Employee> employees = new List<Employee>();
 
-            for (int i = 0; i < 10000000; i++)
-            {
-                Employee randomEmployee = new Employee(Guid.NewGuid().ToString(), Guid.NewGuid().ToString(), Guid.NewGuid().ToString(), new DateTime(1991, 3, 16), null, EmployeeType.Sales);
-                employees.Add(randomEmployee);
-            }
+            //for (int i = 0; i < 10000000; i++)
+            //{
+            //    Employee randomEmployee = new Employee(Guid.NewGuid().ToString(), Guid.NewGuid().ToString(), Guid.NewGuid().ToString(), new DateTime(1991, 3, 16), null, EmployeeType.Sales);
+            //    employees.Add(randomEmployee);
+            //}
 
-            employees.Clear();
-            employees = null;
+            //employees.Clear();
+            //employees = null;
 
-            GC.Collect();
+            //GC.Collect();
 
-            Console.ReadLine();
+            //Console.ReadLine();
+
+            Employee bethany = new Employee("John", "Doe", "john@snowball.be", new DateTime(1990, 10, 10), null, EmployeeType.Research);
+            bethany.CalculateWage();
         }
     }
 }

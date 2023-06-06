@@ -11,4 +11,10 @@
     <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Reference Include="BethanysPieShopHRM.Logic">
+      <HintPath>E:\C#\Pluralsight\02 Pluralsight - C# 10 Fundamentals 2022-2\c-sharp-10-fundamentals\Assets\m9\BethanysPieShopHRM.Logic.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
 </Project>
