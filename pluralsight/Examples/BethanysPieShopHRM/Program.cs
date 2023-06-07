@@ -472,8 +472,33 @@ namespace BethanysPieShopHRM
 
             //Console.ReadLine();
 
-            Employee bethany = new Employee("John", "Doe", "john@snowball.be", new DateTime(1990, 10, 10), null, EmployeeType.Research);
-            bethany.CalculateWage();
+            //Employee bethany = new Employee("John", "Doe", "john@snowball.be", new DateTime(1990, 10, 10), null, EmployeeType.Research);
+            //bethany.CalculateWage();
+
+            // Array
+
+            int[] sampleArray1 = new int[5];
+            int[] sampleArray2 = new int[] { 1, 2, 3, 4, 5 };
+
+            //Error array
+            //int[] sampleArray3 = new int[5] { 1, 2, 3, 4, 5, 6 }; // provide compile time error
+
+            Console.WriteLine("How many employee do you want to register");
+            int length = int.Parse(Console.ReadLine());
+
+            int[] employeeIds = new int[length];
+
+            for (int i = 0; i < length; i++)
+            {
+                Console.Write("Enter the employee ID: ");
+                int id = int.Parse(Console.ReadLine());
+                employeeIds[i] = id;
+            }
+
+            for (int i = 0; i < employeeIds.Length; i++)
+            {
+                Console.WriteLine($"ID {i + 1}: \t{employeeIds[i]}");
+            }
         }
     }
 }

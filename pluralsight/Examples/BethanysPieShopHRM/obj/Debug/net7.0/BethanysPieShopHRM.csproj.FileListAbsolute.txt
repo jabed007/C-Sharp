@@ -15,3 +15,4 @@ G:\Code\C-Sharp\pluralsight\Examples\BethanysPieShopHRM\obj\Debug\net7.0\Bethany
 G:\Code\C-Sharp\pluralsight\Examples\BethanysPieShopHRM\obj\Debug\net7.0\ref\BethanysPieShopHRM.dll
 G:\Code\C-Sharp\pluralsight\Examples\BethanysPieShopHRM\bin\Debug\net7.0\Newtonsoft.Json.dll
 G:\Code\C-Sharp\pluralsight\Examples\BethanysPieShopHRM\obj\Debug\net7.0\BethanysPieShopHRM.csproj.CopyComplete
+G:\Code\C-Sharp\pluralsight\Examples\BethanysPieShopHRM\bin\Debug\net7.0\BethanysPieShopHRM.Logic.dll
