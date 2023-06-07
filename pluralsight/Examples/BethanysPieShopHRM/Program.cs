@@ -477,27 +477,53 @@ namespace BethanysPieShopHRM
 
             // Array
 
-            int[] sampleArray1 = new int[5];
-            int[] sampleArray2 = new int[] { 1, 2, 3, 4, 5 };
+            //int[] sampleArray1 = new int[5];
+            //int[] sampleArray2 = new int[] { 1, 2, 3, 4, 5 };
 
-            //Error array
-            //int[] sampleArray3 = new int[5] { 1, 2, 3, 4, 5, 6 }; // provide compile time error
+            ////Error array
+            ////int[] sampleArray3 = new int[5] { 1, 2, 3, 4, 5, 6 }; // provide compile time error
 
-            Console.WriteLine("How many employee do you want to register");
-            int length = int.Parse(Console.ReadLine());
+            //Console.WriteLine("How many employee do you want to register");
+            //int length = int.Parse(Console.ReadLine());
 
-            int[] employeeIds = new int[length];
+            //int[] employeeIds = new int[length];
 
-            for (int i = 0; i < length; i++)
+            //for (int i = 0; i < length; i++)
+            //{
+            //    Console.Write("Enter the employee ID: ");
+            //    int id = int.Parse(Console.ReadLine());
+            //    employeeIds[i] = id;
+            //}
+
+            //for (int i = 0; i < employeeIds.Length; i++)
+            //{
+            //    Console.WriteLine($"ID {i + 1}: \t{employeeIds[i]}");
+            //}
+
+            // Working with an array of employee objects
+            Employee bethany = new Employee("Bethany", "Smith", "bethany@snowball.be", new DateTime(1979, 1, 16), 25, EmployeeType.Manager);
+            Employee george = new("George", "Jones", "george@snowball.be", new DateTime(1984, 3, 28), 30, EmployeeType.Research);
+            Employee mary = new Employee("Mary", "Jones", "mary@snowball.be", new DateTime(1965, 1, 16), 30, EmployeeType.Manager);
+            Employee bobJunior = new Employee("Bob", "Spencer", "bob@snowball.be", new DateTime(1988, 1, 23), 17, EmployeeType.Research);
+            Employee kevin = new Employee("Kevin", "Marks", "kevin@snowball.be", new DateTime(1953, 12, 12), 10, EmployeeType.StoreManager);
+            Employee kate = new Employee("Kate", "Greggs", "kate@snowball.be", new DateTime(1993, 8, 8), 10, EmployeeType.StoreManager);
+            Employee kim = new Employee("Kim", "Jacobs", "kim@snowball.be", new DateTime(1975, 5, 14), 22, EmployeeType.StoreManager);
+
+            Employee[] employees = new Employee[7];
+            employees[0] = bethany;
+            employees[1] = george;
+            employees[2] = mary;
+            employees[3] = bobJunior;
+            employees[4] = kevin;
+            employees[5] = kate;
+            employees[6] = kim;
+
+            foreach(Employee emp in employees)
             {
-                Console.Write("Enter the employee ID: ");
-                int id = int.Parse(Console.ReadLine());
-                employeeIds[i] = id;
-            }
-
-            for (int i = 0; i < employeeIds.Length; i++)
-            {
-                Console.WriteLine($"ID {i + 1}: \t{employeeIds[i]}");
+                emp.EmployeeDetails();
+                var numberOfHoursWorked = new Random().Next(25);
+                emp.PerformWork(numberOfHoursWorked);
+                emp.ReceiveWage();
             }
         }
     }
