@@ -561,67 +561,80 @@ namespace BethanysPieShopHRM
 
             // working with list
 
-            List<int> employeeIds = new List<int>();
+            //List<int> employeeIds = new List<int>();
 
-            employeeIds.Add(55);
-            employeeIds.Add(57);
-            employeeIds.Add(99);
-            employeeIds.Add(35);
-            employeeIds.Add(100);
-            
+            //employeeIds.Add(55);
+            //employeeIds.Add(57);
+            //employeeIds.Add(99);
+            //employeeIds.Add(35);
+            //employeeIds.Add(100);
 
-            if (employeeIds.Contains(99))
-            {
-                Console.WriteLine("99 is found");
-            }
 
-            var currentAmountOfEmployees = employeeIds.Count();
+            //if (employeeIds.Contains(99))
+            //{
+            //    Console.WriteLine("99 is found");
+            //}
 
-            Console.WriteLine(currentAmountOfEmployees);
+            //var currentAmountOfEmployees = employeeIds.Count();
 
-            var employeeIdsArray = employeeIds.ToArray();
+            //Console.WriteLine(currentAmountOfEmployees);
 
-            //Console.WriteLine(employeeIdsArray);
+            //var employeeIdsArray = employeeIds.ToArray();
 
-            employeeIds.Clear();
+            ////Console.WriteLine(employeeIdsArray);
 
-            Console.WriteLine("How many employees id's do you want to registered");
+            //employeeIds.Clear();
 
-            var length = int.Parse(Console.ReadLine());
+            //Console.WriteLine("How many employees id's do you want to registered");
 
-            for (int i = 0; i < length; i++)
-            {
-                Console.Write($"Enter employee id {i + 1}: ");
-                var employeeId = int.Parse(Console.ReadLine());
-                employeeIds.Add(employeeId);
-            }
+            //var length = int.Parse(Console.ReadLine());
 
-            for (int i = 0; i < employeeIds.Count; i++)
-            {
-                Console.WriteLine($"Employee id {i + 1}: {employeeIds[i]}");
-            }
+            //for (int i = 0; i < length; i++)
+            //{
+            //    Console.Write($"Enter employee id {i + 1}: ");
+            //    var employeeId = int.Parse(Console.ReadLine());
+            //    employeeIds.Add(employeeId);
+            //}
+
+            //for (int i = 0; i < employeeIds.Count; i++)
+            //{
+            //    Console.WriteLine($"Employee id {i + 1}: {employeeIds[i]}");
+            //}
+
+            //Employee bethany = new Employee("Bethany", "Smith", "bethany@snowball.be", new DateTime(1979, 1, 16), 25, EmployeeType.Manager);
+            //Employee george = new("George", "Jones", "george@snowball.be", new DateTime(1984, 3, 28), 30, EmployeeType.Research);
+            //Employee mary = new Employee("Mary", "Jones", "mary@snowball.be", new DateTime(1965, 1, 16), 30, EmployeeType.Manager);
+            //Employee bobJunior = new Employee("Bob", "Spencer", "bob@snowball.be", new DateTime(1988, 1, 23), 17, EmployeeType.Research);
+            //Employee kevin = new Employee("Kevin", "Marks", "kevin@snowball.be", new DateTime(1953, 12, 12), 10, EmployeeType.StoreManager);
+            //Employee kate = new Employee("Kate", "Greggs", "kate@snowball.be", new DateTime(1993, 8, 8), 10, EmployeeType.StoreManager);
+            //Employee kim = new Employee("Kim", "Jacobs", "kim@snowball.be", new DateTime(1975, 5, 14), 22, EmployeeType.StoreManager);
+
+            //List<Employee> employees = new List<Employee>();
+
+            //employees.Add(george);
+            //employees.Add(mary);
+            //employees.Insert(0, bethany);
+            //employees.Add(bobJunior);
+            //employees.Add(kate);
+            //employees.Add(kim);
+
+            //foreach (Employee employee in employees)
+            //{
+            //    employee.EmployeeDetails();
+            //}
 
             Employee bethany = new Employee("Bethany", "Smith", "bethany@snowball.be", new DateTime(1979, 1, 16), 25, EmployeeType.Manager);
             Employee george = new("George", "Jones", "george@snowball.be", new DateTime(1984, 3, 28), 30, EmployeeType.Research);
-            Employee mary = new Employee("Mary", "Jones", "mary@snowball.be", new DateTime(1965, 1, 16), 30, EmployeeType.Manager);
-            Employee bobJunior = new Employee("Bob", "Spencer", "bob@snowball.be", new DateTime(1988, 1, 23), 17, EmployeeType.Research);
-            Employee kevin = new Employee("Kevin", "Marks", "kevin@snowball.be", new DateTime(1953, 12, 12), 10, EmployeeType.StoreManager);
-            Employee kate = new Employee("Kate", "Greggs", "kate@snowball.be", new DateTime(1993, 8, 8), 10, EmployeeType.StoreManager);
-            Employee kim = new Employee("Kim", "Jacobs", "kim@snowball.be", new DateTime(1975, 5, 14), 22, EmployeeType.StoreManager);
 
-            List<Employee> employees = new List<Employee>();
+            bethany.EmployeeDetails();
+            bethany.PerformWork(8);
+            bethany.PerformWork();
+            bethany.PerformWork(3);
+            bethany.ReceiveWage();
 
-            employees.Add(george);
-            employees.Add(mary);
-            employees.Insert(0, bethany);
-            employees.Add(bobJunior);
-            employees.Add(kate);
-            employees.Add(kim);
+            bethany.FirstName = "Bethany";
 
-            foreach (Employee employee in employees)
-            {
-                employee.EmployeeDetails();
-            }
+            string fn = bethany.FirstName;
         }
     }
 }
