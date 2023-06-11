@@ -636,8 +636,10 @@ namespace BethanysPieShopHRM
 
             string fn = bethany.FirstName;
 
-            Manager mary = new Manager("Mary", "Jones", "mary@snowball.be", new DateTime(1965, 1, 16), 30);
-            JuniorResearcher bobJunior = new JuniorResearcher("Bob", "Spencer", "bob@snowball.be", new DateTime(1988, 1, 23), 17);
+            //Manager mary = new Manager("Mary", "Jones", "mary@snowball.be", new DateTime(1965, 1, 16), 30);
+            Employee mary = new Manager("Mary", "Jones", "mary@snowball.be", new DateTime(1965, 1, 16), 30);
+            //JuniorResearcher bobJunior = new JuniorResearcher("Bob", "Spencer", "bob@snowball.be", new DateTime(1988, 1, 23), 17);
+            Researcher bobJunior = new JuniorResearcher("Bob", "Spencer", "bob@snowball.be", new DateTime(1988, 1, 23), 17);
 
             mary.EmployeeDetails();
             mary.PerformWork(4);
@@ -645,7 +647,7 @@ namespace BethanysPieShopHRM
             mary.PerformWork();
             mary.PerformWork();
             mary.ReceiveWage();
-            mary.AttendManagementMeeting();
+            //mary.AttendManagementMeeting(); // error
 
             bobJunior.ReasearchNewPieTastes(5);
             bobJunior.ReasearchNewPieTastes(5);
