@@ -15,6 +15,7 @@ namespace BethanysPieShopHRM.HR
         private int numberOfHoursWorked;
         private double wage;
         private double? hourlyRate;
+        private Address address;
 
         //private EmployeeType employeeType;
 
@@ -110,6 +111,12 @@ namespace BethanysPieShopHRM.HR
             }
         }
 
+        public Address Address
+        {
+            get { return address; }
+            set { address = value; }
+        }
+
         /// <summary>
         /// public EmployeeType EmployeeType { get { return employeeType; } set { employeeType = value; } }
         /// </summary>
@@ -131,6 +138,17 @@ namespace BethanysPieShopHRM.HR
             BirthDay = birthDay;
             HourlyRate = hourlyRate ?? 10;
             //EmployeeType = employeeType;
+        }
+
+        public Employee(string firstName, string lastName, string email, DateTime birthDay, double? hourlyRate, string street, string houseNumber, string zipCode, string city)
+        {
+            FirstName = firstName;
+            LastName = lastName;
+            Email = email;
+            BirthDay = birthDay;
+            HourlyRate = hourlyRate ?? 10;
+
+            Address = new Address(street, houseNumber, zipCode, city);
         }
 
         public void PerformWork()

@@ -640,6 +640,10 @@ namespace BethanysPieShopHRM
             Employee mary = new Manager("Mary", "Jones", "mary@snowball.be", new DateTime(1965, 1, 16), 30);
             //JuniorResearcher bobJunior = new JuniorResearcher("Bob", "Spencer", "bob@snowball.be", new DateTime(1988, 1, 23), 17);
             Researcher bobJunior = new JuniorResearcher("Bob", "Spencer", "bob@snowball.be", new DateTime(1988, 1, 23), 17);
+            Employee jake = new Employee("Jake", "Nikols", "jake@snowball.be", new DateTime(1995, 8, 16), 25, "New Street", "123", "123456", "Pie Ville");
+
+            string street = jake.Address.Street;
+            Console.WriteLine(street);
 
             mary.EmployeeDetails();
             mary.PerformWork(4);
