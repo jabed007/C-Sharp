@@ -623,8 +623,8 @@ namespace BethanysPieShopHRM
             //    employee.EmployeeDetails();
             //}
 
-            Employee bethany = new Employee("Bethany", "Smith", "bethany@snowball.be", new DateTime(1979, 1, 16), 25, EmployeeType.Manager);
-            Employee george = new("George", "Jones", "george@snowball.be", new DateTime(1984, 3, 28), 30, EmployeeType.Research);
+            Employee bethany = new Employee("Bethany", "Smith", "bethany@snowball.be", new DateTime(1979, 1, 16), 25 /*EmployeeType.Manager*/);
+            Employee george = new("George", "Jones", "george@snowball.be", new DateTime(1984, 3, 28), 30/*, EmployeeType.Research*/);
 
             bethany.EmployeeDetails();
             bethany.PerformWork(8);
@@ -635,6 +635,20 @@ namespace BethanysPieShopHRM
             bethany.FirstName = "Bethany";
 
             string fn = bethany.FirstName;
+
+            Manager mary = new Manager("Mary", "Jones", "mary@snowball.be", new DateTime(1965, 1, 16), 30);
+            JuniorResearcher bobJunior = new JuniorResearcher("Bob", "Spencer", "bob@snowball.be", new DateTime(1988, 1, 23), 17);
+
+            mary.EmployeeDetails();
+            mary.PerformWork(4);
+            mary.PerformWork(5);
+            mary.PerformWork();
+            mary.PerformWork();
+            mary.ReceiveWage();
+            mary.AttendManagementMeeting();
+
+            bobJunior.ReasearchNewPieTastes(5);
+            bobJunior.ReasearchNewPieTastes(5);
         }
     }
 }

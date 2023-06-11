@@ -16,7 +16,7 @@ namespace BethanysPieShopHRM.HR
         private double wage;
         private double? hourlyRate;
 
-        private EmployeeType employeeType;
+        //private EmployeeType employeeType;
 
 
 
@@ -73,7 +73,7 @@ namespace BethanysPieShopHRM.HR
                 return numberOfHoursWorked;
             }
 
-            private set
+            protected set
             {
                 numberOfHoursWorked = value;
             }
@@ -110,21 +110,27 @@ namespace BethanysPieShopHRM.HR
             }
         }
 
-        public EmployeeType EmployeeType { get { return employeeType; } set { employeeType = value; } }
+        /// <summary>
+        /// public EmployeeType EmployeeType { get { return employeeType; } set { employeeType = value; } }
+        /// </summary>
+        /// <param name="first"></param>
+        /// <param name="last"></param>
+        /// <param name="em"></param>
+        /// <param name="bd"></param>
 
-        public Employee(string first, string last, string em, DateTime bd) : this(first, last, em, bd, 0, EmployeeType.StoreManager)
+        public Employee(string first, string last, string em, DateTime bd) : this(first, last, em, bd, 0/*, EmployeeType.StoreManager*/)
         {
 
         }
 
-        public Employee(string firstName, string lastName, string email, DateTime birthDay, double? rate, EmployeeType employeeType)
+        public Employee(string firstName, string lastName, string email, DateTime birthDay, double? hourlyRate)
         {
             FirstName = firstName;
             LastName = lastName;
             Email = email;
             BirthDay = birthDay;
-            HourlyRate = rate ?? 10;
-            EmployeeType = employeeType;
+            HourlyRate = hourlyRate ?? 10;
+            //EmployeeType = employeeType;
         }
 
         public void PerformWork()
@@ -209,8 +215,8 @@ namespace BethanysPieShopHRM.HR
 
             //Console.WriteLine($"{firstName} {lastName} has received a wage of {wage} for {numberOfHoursWorked} hour(s) of work");
 
-            double wageBeforeTax = 0.0;
-
+            double wageBeforeTax = NumberOfHoursWorked * HourlyRate.Value * 1.25;
+            /*
             if (EmployeeType == EmployeeType.Manager)
             {
                 Console.WriteLine($"An extra was added to the wage since {firstName} is a manager");
@@ -219,7 +225,7 @@ namespace BethanysPieShopHRM.HR
             else
             {
                 wageBeforeTax = numberOfHoursWorked * HourlyRate.Value;
-            }
+            }*/
             double taxAmpount = wageBeforeTax * taxRate;
 
             Console.WriteLine("Tax amount: " + taxAmpount);
